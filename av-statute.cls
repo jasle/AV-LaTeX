@@ -46,3 +46,12 @@
 % Customize \paragraph to not take an title
 \let\oldparagraph\paragraph
 \renewcommand{\paragraph}{\oldparagraph{\hspace{-1em}}}
+
+% Add option 'draft'
+\DeclareOption{draft}{
+	\RequirePackage{draftwatermark}
+	\SetWatermarkText{Entwurf}
+	\SetWatermarkScale{0.5}
+}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
