@@ -55,3 +55,7 @@
 }
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
+
+% Define \logo{} to add an logo
+\let\thelogo\relax
+\newcommand{logo}[1]{\renewcommand{thelogo}{#1}}
