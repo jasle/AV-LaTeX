@@ -59,3 +59,15 @@
 % Define \logo{} to add an logo
 \let\thelogo\relax
 \newcommand{logo}[1]{\renewcommand{thelogo}{#1}}
+
+% Define \signature{} to add an signature
+\newcommand{signature}[1]{
+
+#1
+
+\vspace{0.8cm}
+\begin{tabular}{p{8cm}}
+\dotfill \\
+\end{tabular}
+\\(Unterschrift)\\
+}
