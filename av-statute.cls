@@ -42,3 +42,7 @@
 \makeatletter
 \@removefromreset{subsection}{section}
 \makeatother
+
+% Customize \paragraph to not take an title
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}{\oldparagraph{\hspace{-1em}}}
