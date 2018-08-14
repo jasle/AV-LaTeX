@@ -32,3 +32,13 @@
 \newcommand{keywords}[1]{\renewcommand{thekeywords}{#1}}
 
 \setlenght{\parindent}{0em}
+
+% Customize section numbering
+\renewcommand{\thesection}{\Alph{section}.}
+\renewcommand{\thesubsection}{§~\arabic{subsection}}
+\setcounter{secnumdepth}{4}
+\renewcommand{\theparagraph}{\arabic{paragraph}.}
+\usepackage{remreset}
+\makeatletter
+\@removefromreset{subsection}{section}
+\makeatother
