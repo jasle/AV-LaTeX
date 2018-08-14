@@ -26,3 +26,7 @@
 }
 \urlstyle{same}
 \setlength{\emergencystretch}[3em] % prevent overfull lines
+
+% Define \keywords{} to add Keywords
+\let\thekeywords\relax
+\newcommand{keywords}[1]{\renewcommand{thekeywords}{#1}}
