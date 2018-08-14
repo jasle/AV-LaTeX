@@ -13,7 +13,7 @@
 \RequirePackage[a4paper]{geometry} % set paper size to a4
 \RequirePackage[german]{babel}
 \RequirePackage{graphicx}
-\RequirePackage{titling{ % package for customizing \maketitle
+\RequirePackage{titling} % package for customizing \maketitle
 
 % Setup pdf settings
 \hypersetup{
@@ -22,7 +22,7 @@
 	pdfauthor={\theauthor},
 	pdftitle={\thetitle},
 	pdfsubject={\thetitle},
-	pdfkeywords={\thekeywords}}
+	pdfkeywords={\thekeywords}
 }
 \urlstyle{same}
 \setlength{\emergencystretch}[3em] % prevent overfull lines
